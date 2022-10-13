@@ -1,8 +1,12 @@
 class Solution:
 
     # Quicksort Time Complexity:
-    #average: O(nlogn)
+    # average: O(nlogn)
     # worst: O(n^2) when selected pivot is the maximum or minimum, causing one side has partition of n - 1 element
+
+    # How to avoid worst case:
+    # M1. shuffle array first before sort
+    # M2. pick pivot randomly
 
     def quicksort(self, array):
         self.helper(array, 0, len(array) - 1)
